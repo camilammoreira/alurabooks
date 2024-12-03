@@ -1,0 +1,99 @@
+.header__hamburguer-menu {
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__image{
+    padding: 1em;
+}
+
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;    
+    width: 70vw;
+}
+
+.container__checkbox {
+    display: none;
+}
+
+.container__checkbox:checked ~ .menu-list {
+    display: block;
+}
+
+.menu-list__title,
+.menu-list__item {
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.menu-list__title {
+    color: var(--highlight);
+    font-weight: 700;
+}
+
+.menu-list__link {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.banner {
+    background: var(--gradient);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+}
+
+.banner__title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 1rem 0;
+}
+
+.banner__search {
+    background-color: transparent;
+    font-family: var(--main-font);
+    color: var(--white);
+    font-size: 14px;
+    width: 100%;
+    height: 44px;
+    border: 1px solid var(--white);
+    border-radius: 24px;
+    text-align: center;
+}
+
+.banner__search::placeholder {
+    color: var(--white);
+}
+
+
+.banner__search:active {
+    border: 2px solid var(--highlight);
+}
