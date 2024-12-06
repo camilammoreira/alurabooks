@@ -12,6 +12,11 @@
     width: 100%;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+
 .swiper-pagination {
     position: initial;
     margin: .5rem 0;
@@ -19,4 +24,25 @@
 
 .swiper-pagination-bullet-active {
     --swiper-pagination-color: var(--gradient);
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel__title {
+        font-size: 26px;
+        padding: 3rem 0 1rem 0;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+        top: 60%;
+    }
 }

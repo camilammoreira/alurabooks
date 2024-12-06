@@ -35,9 +35,35 @@
                 </li>
             </ul>
             <a href="#"><img class="container__image" src="./assets/Logo.svg" alt="Logotipo AluraBooks"></a>
+            <h1 class="container__title"><b class="container__title--bold">Alura</b>Books</h1>
         </div>
+        <ul class="menu-navbar">
+            <input type="checkbox" id="categorias" class="categorias__checkbox">
+            <label for="categorias" class="menu-navbar__categoria ">
+                <li class="menu-navbar__item">Categorias</li>
+            </label>
+            <ul class="menu-list">
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Programação</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Front-end</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Infraestrutura</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Business</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Design & UX</a>
+                </li>
+            </ul>
+            <li class="menu-navbar__item"><a href="#" class="menu-navbar__item--link">Favoritos</a></li>
+            <li class="menu-navbar__item"><a href="#" class="menu-navbar__item--link">Minha estante</a></li>
+        </ul>
         <div class="container">
-            <a href="#"><img class="container__image" src="./assets/Favoritos.svg" alt="Meus favoritos"></a>
+            <a href="#"><img class="container__image container__image--transparent" src="./assets/Favoritos.svg" alt="Meus favoritos"></a>
             <a href="#"><img class="container__image" src="./assets/Compras.svg" alt="Minhas compras"></a>
             <a href="#"><img class="container__image" src="./assets/Usuario.svg" alt="Minha conta"></a>
         </div>
@@ -61,7 +87,9 @@
                 <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Livro Guia Front-end"></div>
                 <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Livro Acessibilidade"></div>
             </div>
-        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
         <div class="card">
             <!-- Row 1 -->
@@ -102,7 +130,9 @@
                 <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Livro Guia Front-end"></div>
                 <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Livro Javascript"></div>
             </div>
-        
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
         </div>
         <div class="card">
             <!-- Row 1 -->
@@ -159,13 +189,126 @@
         </ul>
     </section>
     <section class="contact">
-        <h2 class="contact__title">Fique por dentro das novidades!</h2>
-        <p class="contact__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="">
+            <h2 class="contact__title">Fique por dentro das novidades!</h2>
+            <p class="contact__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" class="contact__email" placeholder="Cadastre seu email">
     </section>
     <hr>
     <footer class="footer">
-        <p class="footer__text">Grupo Alura</p>
+        <p class="footer__title">Grupo Alura</p>
+        <div class="footer__group">           
+            <ul class="footer__list">
+                <li class="footer__list__title">Educação</li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/Caelum.svg" alt="Logotipo Caelum" class="footer__list__img">
+                        Caelum
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/CasaDoCodigo.svg" alt="Logotipo Casa do Código" class="footer__list__img">
+                        Casa do Código
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__group">
+            <ul class="footer__list">
+                <li class="footer__list__title">Educação Online</li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/Alura.svg" alt="Logotipo Alura" class="footer__list__img">
+                        Alura
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/AluraEmpresas.svg" alt="Logotipo Alura para Empresas" class="footer__list__img">
+                        Alura para Empresas
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/AluraLATAM.svg" alt="Logotipo Alura LATAM" class="footer__list__img">
+                        Alura LATAM
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/AluraStart.svg" alt="Logotipo Alura Start" class="footer__list__img">
+                        Alura Start
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/MusicDot.svg" alt="Logotipo MusicDot" class="footer__list__img">
+                        MusicDot
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/AluraLingua.svg" alt="Logotipo Alura Língua" class="footer__list__img">
+                        Alura Língua
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/PM3.svg" alt="Logotipo PM3" class="footer__list__img">
+                        PM3
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__group">
+            <ul class="footer__list">
+                <li class="footer__list__title">Comunidade</li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/HipstersTech.svg" alt="Logotipo Hipsters ponto Tech" class="footer__list__img">
+                        Hipsters ponto Tech
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/ScubaDev.svg" alt="Logotipo Scuba Dev" class="footer__list__img">
+                        Scuba Dev
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/LayersTech.svg" alt="Logotipo Layers ponto Tech" class="footer__list__img">
+                        Layers ponto Tech
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/LikeABoss.svg" alt="Logotipo Like a Boss" class="footer__list__img">
+                        Like a Boss
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/CarreiraSemFronteira.svg" alt="Logotipo Carreira sem Fronteira" class="footer__list__img">
+                        Carreira sem Fronteira
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/HipstersJobs.svg" alt="Logotipo Hipsters ponto Jobs" class="footer__list__img">
+                        Hipsters ponto Jobs
+                    </a>
+                </li>
+                <li class="footer__list__item">
+                    <a href="#" class="footer__list__link">
+                        <img src="assets/GUJ.svg" alt="Logotipo GUJ" class="footer__list__img">
+                        GUJ
+                    </a>
+                </li>
+            </ul>   
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
