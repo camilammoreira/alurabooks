@@ -32,6 +32,12 @@
     padding: 1rem;
 }
 
+.topics__link:hover {
+    background: var(--white);
+    color: var(--highlight);
+    transition: 400ms;
+}
+
 @media screen and (min-width:1024px) {
     .topics{
         padding: 1rem 7rem;
@@ -51,5 +57,16 @@
     .topics__link {
         font-size: 24px;
         padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .topics{
+        padding: 3rem 25vw;
+    }
+
+    .topics__title {
+        font-size: 32px;
+        margin: 2rem;
     }
 }

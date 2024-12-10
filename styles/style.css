@@ -17,9 +17,11 @@
     --dark-gray: #411717;
     --black: #000000;
     --gradient: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-    --main-font: "Poppins";
+    --main-font: "Poppins", arial;
     --logo-font: "Josefin Sans";
 }
+
+
 
 body {
     background-color: var(--background-color);

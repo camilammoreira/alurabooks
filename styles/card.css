@@ -20,6 +20,7 @@
 .description__title {
     font-weight: 700;
     color: var(--highlight);
+    line-height: 24px;
 }
 
 .description__book-title {
@@ -45,6 +46,27 @@
 
 .action__buttons__item {
     margin: 0 0.5rem;
+}
+
+#like,
+#like2 {
+    display: none;
+}
+
+#like:checked + label > svg,
+#like2:checked + label > svg {
+    animation: fill;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fill {
+    0% {
+        fill: transparent;
+    }
+    100% {
+        fill: #013053;
+    }
 }
 
 .learn-more__button {
@@ -83,5 +105,16 @@
     .card {
         width: 50%;
         margin: 4rem auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .card {
+        width: 40%;
+    }
+
+    .description__title {
+        font-size: 32px;
+        line-height: 48px;
     }
 }

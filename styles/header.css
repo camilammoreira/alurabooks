@@ -39,6 +39,14 @@
     display: block;
 }
 
+.container__checkbox:checked ~.menu-label > .header__hamburguer-menu {
+    background-image: url("../assets/Menu\ Aberto.svg");
+}
+
+.container__checkbox:checked ~.menu-label {
+    background: var(--gradient);
+}
+
 .menu-list__title,
 .menu-list__item {
     padding: 1rem;
@@ -98,6 +106,10 @@
 }*/
 
 .container__title {
+    display: none;
+}
+
+.container__image__title {
     display: none;
 }
 
@@ -175,5 +187,38 @@
     .banner__search {
         width: 50%;
         padding: 1.5rem;
+    }
+    .container__image__title {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .header {
+    padding: 0 4rem;
+    }
+
+    .menu-navbar {
+        margin: 0 auto 0 2rem;
+    }
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 3rem;
+        color: var(--black);
+    }
+
+    .container__image__title{
+        display: block;
+    }
+    .container__image--transparent {
+        display: none;
+    }
+
+    .banner__search {
+        width: 40%;
     }
 }
