@@ -101,9 +101,10 @@
     color: var(--white);
 }
 
-/*.banner__search:active {
-    border: 2px solid var(--black);
-}*/
+.banner__search:focus-visible {
+    border: 2px solid var(--highlight);
+    outline: none;
+}
 
 .container__title {
     display: none;
